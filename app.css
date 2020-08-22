@@ -36,15 +36,42 @@
 }
 
 .app > .body ul li {
-    padding: 20px;
     font-size: 16px;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
 }
 
+li .glyphicon {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#trash{
+    background: #e74c3c;
+    margin-right: 30px;
+    text-align: center;
+    color: white;
+    width: 0px;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+#trash:hover {
+    width: 65px;
+    opacity: 1.0;
+}
+
 .app > .body .add-btn {
     display: inline-block;
     padding: 30px 20px 30px 20px;
+    margin: 10px;
     font-size: 38px;
     position: fixed;
     right: 10px;
